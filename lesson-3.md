@@ -1,11 +1,11 @@
-### 第3课
+# 第3课
 ## HTML
-# 标签
+### 标签
     <div>
-# 属性    
+### 属性    
     class: <div class="test"></div>
     id: <div id="nav"></div>
-# 样式
+### 样式
     外部：<link rel="stylesheet" type="text/css" href="mystyle.css">
     内部：<style></style>
     内联：style="color: red;"
