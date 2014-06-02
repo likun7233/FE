@@ -17,10 +17,13 @@
     text-decoration:none;
 ## 工具
     Chrome控制台打开，位置，打开console，看Elements， 看CSS， 改变CSS样式
-## 扩展
-    CSS颜色，rgb， rgba   
 ## 注意点
     样式放在head
     脚本放在body下面
+## 扩展
+CSS颜色，rgb， rgba   
 ## 课后问题
-    link @import加载CSS区别
+link @import加载CSS区别
+## 课后练习
+sublime命令：查找，在文件中查找，快速查找文件，安装插件CSSFormat, JSFormat
+    
