@@ -4,5 +4,9 @@
 ## 前端工程师职责
 ## 我该怎么学习
 # html测试
-  \<hmtl\>
-  \<\/html\>
+    <!doctype html>
+    <hmtl>
+        <body>
+            <script></script>
+        </body>
+    </html>
