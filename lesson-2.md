@@ -34,7 +34,6 @@
     浏览器： Chrome
     编辑器： Sublime
     打开调试：按F12
-## 扩展
-    CSS颜色，rgb， rgba 
+
     
     
