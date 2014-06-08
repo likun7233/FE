@@ -42,5 +42,14 @@
     10px 5px 1px = 10px 5px 1px 5px;
 
 ### 框模型
+1. 外边距，边框，内边距，内容
+2. 边距的设定
+3. 边距的合并
+
+### 定位
+1. 理解几种定位方式fixed absolute relative
+2. 理解浮动
 
 ## 课后练习
+1. 做个百度首页
+2. 做个bbs页面，参考：http://phpbb3.pixelgoose.com/index.php?style=2
