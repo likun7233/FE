@@ -1,4 +1,4 @@
-### 第2课 前端基础
+# 第2课 前端基础
 ## HTML标签
     <!DOCTYPE html>  : 文档声明，支持html5
     <html>页面被他包裹</html>
