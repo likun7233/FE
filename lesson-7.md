@@ -1,7 +1,7 @@
 # 第7课 Javascript基础
 
 ## 课程大纲
-1. JavaScript简历
+1. JavaScript历史
 2. ECMAScript，DOM，BOM
 2. JavaScript的引入方式
 3. JavaScript的基本数据类型、常量变量
