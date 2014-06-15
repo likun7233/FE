@@ -33,8 +33,7 @@
 - undefined: 声明未初始化
 - null: 空对象 
 - number: 数字
-
-######    
+***
     var a = 1,
         b = 0.1,
         c = .2,
