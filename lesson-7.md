@@ -10,8 +10,8 @@
 - 是客户端脚本语言
 
 ##### 2.Javascript引入方式
-- <script>开始,遇到</script>结束
-- <script type="text/javascript" src="1.js"></script>
+- \<script>开始,遇到\</script>结束
+- \<script type="text/javascript" src="1.js">\</script>
 - 标签的位置，放在body内的最下位置。区别css位置
 - defer/async (了解)
  
