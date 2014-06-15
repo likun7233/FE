@@ -31,12 +31,30 @@
 - typeof 查看数据类型
 - undefined bollean string number object function
 - undefined: 声明未初始化
-- null: 空对象 
+- string: 字符串
+
+# 
+    var name = 'kevin';
+    var hi = "hello";
+    var sayHello = 'hi "kevin"'
+    console.log(name.length);
+    console.log(name + ' ' + hi);
+    
 - number: 数字
-***
+
+#
     var a = 1,
         b = 0.1,
         c = .2,
         e = 0.3,
     console.log( c + e == 0.5) //相等吗
     console.log( b + c == 0.3 ) //相等吗
+    console.log( a + '' ); //typeof ?
+    console.log( a - '' ); //typeof ?
+    
+- object: 数据和功能的集合
+
+#
+    var obj = {a: 1, b: 2};
+    
+- null: 空对象 
