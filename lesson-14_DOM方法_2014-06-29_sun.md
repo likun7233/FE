@@ -1,8 +1,6 @@
 # 第14课 DOM方法
 
-## 节点类型
-1. 用nodeType获取
-2. 1：元素节点，2: 属性节点， 3: 文本节点
+
 
 ## 节点访问
 #### 获取对应节点
@@ -21,5 +19,10 @@
 2. node.children
 node.children[0]获取第一个子节点
 3. node.firstChild node.lastChild
+
 #### 父节点
 1. parentNode
+
+## 节点类型
+1. 用nodeType获取
+2. 1：元素节点，2: 属性节点， 3: 文本节点
