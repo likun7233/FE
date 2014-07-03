@@ -1,0 +1,75 @@
+div#container {
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+div#login {
+	border: 1px solid #ccc;
+	width: 322px;
+	float: right;
+	margin-top: 100px;
+	font-size: 12px;
+}
+#login a {
+	color: #666;
+}
+#login .header {
+	overflow: hidden;
+}
+#login .tab {
+	width: 160px;
+	float: left;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+#login .tab1 {
+	border-right: 1px solid #ccc;
+	width: 161px;
+}
+#login .active {
+	border-bottom: none;
+}
+#login .content {
+	margin-left: 32px;
+	margin-top: 20px;
+}
+#login .content input[type="text"] {
+	width: 240px;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid #ccc;
+	padding-left: 40px;
+	color: #999;
+	margin-top: 15px;
+}
+#login input.username {
+	background: url(http://s8.mogujie.cn/pic/140411/o613k_kqzeimszozbegrlwgfjeg5sckzsew_15x14.png) 10px center no-repeat;
+}
+#login input.password {
+	background: url(http://s6.mogujie.cn/pic/140411/o613k_kqzdemczozbdiv3wgfjeg5sckzsew_15x16.png) 10px center no-repeat;
+}
+#login .lg_rember {
+	margin-top: 15px;
+	font-size: 12px;
+	color: #999;
+}
+#login .lg-login {
+	margin-top: 15px;
+}
+#login .lg-login a {
+	margin-left: 5px;
+}
+#login .lg-login .submit-btn {
+	display: inline-block;
+	border: none;
+	width: 142px;
+	height: 36px;
+	background-color: rgb(84, 207, 84);
+	border-radius: 5px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+}
+#login .lg-login .submit-btn:hover {
+	background-color: green;
