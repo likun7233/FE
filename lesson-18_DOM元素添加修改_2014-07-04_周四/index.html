@@ -1,0 +1,35 @@
+<html>
+    <body>
+    	<p id="p1">Hello World!</p>
+    	<button id="btn1">red</button>
+    	<button id="btn2">blue</button>
+	    <script>
+	        document.getElementById("p1").innerHTML="New text!";
+
+	        var p1 = document.getElementById("p1");
+	        p1.style.color = "#ff00ff";
+
+	        document.getElementById("btn1").onclick=function(){
+	        	p1.style.backgroundColor = "red";
+	        }
+
+	        document.getElementById("btn2").onclick=function(){
+	        	p1.style.backgroundColor = "blue";
+	        }
+
+
+
+	        var para=document.createElement("p");
+	        /**
+				<p>This is new.</p>
+				<p id="p1">Hello World!<p>This is new.</p></p>
+
+	        **/
+			var node=document.createTextNode("This is new.");
+			para.appendChild(node);
+
+
+			p1.appendChild(para);
+	    </script>
+    </body>
+</html>

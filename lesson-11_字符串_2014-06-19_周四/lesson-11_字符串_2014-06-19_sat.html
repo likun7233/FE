@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+html{
+    background-color: #0076ca;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    background: blue;
+    background: url(http://imgdata.hoop8.com/1407/1432030050766.png) 0 0 no-repeat;
+    padding: 110px 50px 50px;
+    background-color: #0076ca;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+a {
+    color: #59acf3;
+}
+a:hover {
+    color: #a7d8ff;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+    text-align: center;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+	color: #116696;
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #DADADA;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: rgb(221, 221, 221);
+}
+pre code {
+    
+    color: #ff4a14;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        margin:0;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+	}
+    /*
+	table, pre {
+		page-break-inside: avoid;
+	}
+    */
+}
+</style>
+<title>第11课 字符串, JSON</title>
+
+</head>
+<body>
+<h1>第11课 字符串, JSON</h1>
+
+<h2>课程目标</h2>
+
+<p>掌握字符串长度计算，截取，查找等操作
+掌握json的读取，设置</p>
+
+<h2>课程内容</h2>
+
+<h3>字符串</h3>
+
+<h4>1. 长度计算,连接</h4>
+
+<pre><code>var str = "hello";
+console.log( str.length );
+console.log( str[0] );
+console.log( str[str.length - 1]  );
+console.log( str.charAt(0) );
+console.log( str.charCodeAt(0) );
+
+var str2 = " world";
+var str3 = str1 + str2;
+cosnole.log( str3 );
+</code></pre>
+
+<h4>2. 字符串截取</h4>
+
+<pre><code>var str = "hello world";
+var sub1 = str.subStr(1, 3); // 第一个是开始位置， 第二个是长度  ell
+var sub2 = str.subString(1, 3); // 第一个是开始位置，第二个是结束位置，长度为第二个－第一个  el
+var sub3 = str.slice(1, 3); // 同上 允许负参
+</code></pre>
+
+<h4>3. 查找</h4>
+
+<pre><code>var str = "hello my world";
+var s1 = str.search('my');   //6 找不到为-1
+var s2 = str.replace('my', 'your'); //
+var s3 = str.match('my'); //返回匹配的数组
+</code></pre>
+
+<h4>4. 大小写</h4>
+
+<pre><code>var str = "Hello";
+str.toUpperCase();
+str.toLowerCase();
+</code></pre>
+
+<h3>JSON</h3>
+
+<p>josn是轻量级的数据交换格式</p>
+
+<h4>1. JSON格式, 读取, 设置</h4>
+
+<pre><code>var obj = {"name":"keivn", "age": 100}; 
+var obj2 = {name: 'car', color: 'red'};
+var obj3 = {1: 'a', 100: 'b'};
+
+console.log( obj.name );
+console.log( obj['age'] );
+var key = "age";
+cosnole.log( obj[key]);
+console.log( obj3.1 ); //error
+console.log( obj3[1] ) //ok
+console.log( obj3["1"] ) //ok
+
+obj.name = "Peter";
+obj.sex = "man";
+obj.['height'] = "1.82";
+</code></pre>
+
+<h4>2. JSON解析</h4>
+
+<pre><code>var obj = {"name":"keivn", "age": 100}; 
+var objStr = JSON.stringify(obj);  // ie8+
+var str = '{"a":1, "b":2}';
+var o = JSON.parse(str);
+console.log(o)
+</code></pre>
+</body>
+</html>
