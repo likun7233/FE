@@ -1,0 +1,12 @@
+# 网页设计实战（蘑菇街）
+## 登陆页面设计
+### 注意点
+- 文件目录
+### 1. CSS
+- reset.css
+- base.css
+- login.css
+
+### 2. HTML
+- doctype、charset
+- meta
